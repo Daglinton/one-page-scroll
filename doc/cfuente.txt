@@ -1,0 +1,6 @@
+/*pwd*/
+/*cd ..*/
+/*ls -i*/
+##git dif
+##git add .
+##git add -A

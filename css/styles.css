@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    scroll-behavior: smooth;
+}
+/*icono*/
+.bx{
+    font-size: 2em;
+    background-color: white;
+    float: right;
+    margin-right: 4px;
+    margin-top: 5px;
+    border-radius: 5px;
+    }
+.bx:hover{
+    cursor: pointer;
+}
+/*formatiando menu*/
+
+#check-menu:checked ~ ul{
+    margin-right: -7%;
+    transition: 2s;
+}
+#check-menu{
+    display: none;
+}
+.menu{
+    width: 100%;
+    position: fixed;
+    background-color: rgb(99, 97, 97);
+    height: 50px;
+}
+.menu>ul{
+    width: 20%;
+    float:right;
+   
+    margin-top: 40px;
+    transition: 2s;
+    margin-right: -30%
+}
+.menu>ul>li{
+    background-color: rgb(240, 186, 167);
+    text-align: center;
+    margin-top: 1px;
+    list-style: none;
+    border-radius: 5px;
+}
+.menu>ul>li:hover{
+    background-color: rgb(202, 182, 175);
+    cursor: pointer;
+}
+.menu>ul>li>a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+
+}
+
+.card-1,.card-2,.card-3,.card-4,.card-5,.card-6{
+    padding-top: 120px;
+    height: 100vh;
+}
+.card-1{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/794/747/non_2x/smiling-young-students-standing-together-at-college-campus-photo.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+.card-2{
+    background-color: rgb(110, 169, 187);;
+}
+.card-3{
+    background-color: rgb(161, 214, 165);;
+}
+.card-4{
+    background-color: rgb(220, 141, 223);;
+}
+.card-5{
+    background-color: rgb(72, 74, 77);;
+}
+.card-6{
+    background-color: rgb(222, 241, 176);;
+}
+
+/*max-width = hasta , min-widtw= desde*/
+@media screen and  (min-width:768px){
+   
+    .bx{
+        float: none;
+        
+        }
+    .icon{
+        display: none;
+    }
+    .menu{
+        width: 100%;
+        position: fixed;
+        background-color: rgb(36, 35, 35);
+        height: 50px;
+    }
+    .menu>ul{
+        width: 700px;
+        float:none;
+        /* background-color: blue; */
+        transition: 2s;
+        margin: 10px auto;
+    }
+    .menu>ul>li{
+        background-color: rgba(240, 186, 167, 0.055);
+        text-align: center;
+        margin-top: 0px;
+        list-style: none;
+        border-radius: 5px;
+        width:100px ;
+        display: inline-block;
+        border: .5px solid white;
+
+    }
+   
+    
+}
+/* @media screen and (min-width:0px) and (max-width:359px){
+    .menu{
+        width: 100%;
+        position: fixed;
+        background-color: rgb(54, 126, 72);
+        height: 50px;
+    }
+} */
