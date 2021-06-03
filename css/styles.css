@@ -31,6 +31,7 @@
     position: fixed;
     background-color: rgb(99, 97, 97);
     height: 50px;
+    z-index: 10;
 }
 .menu>ul{
     width: 20%;
@@ -85,7 +86,54 @@
 .card-6{
     background-color: rgb(222, 241, 176);;
 }
-
+.pop{
+    width: 100vw;
+   height: 100vh;
+   background-color: hsl(34, 57%, 70%,.7);
+   z-index: 30;
+   position: fixed;
+   top:0px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+    color: white;
+    font-size: 1em;
+}
+.pop>p{
+    width: 40%;
+    border-bottom: 5px solid tomato;
+    background-color: hsl(180, 100%, 25%,.5);
+    font-size: 1.5em;
+    padding: 20px;
+}
+.imgpop{
+   width: 40%;
+}
+#close-pop{
+    z-index: 40;
+    position: fixed;
+    top: 0px;
+}
+#close-pop:checked ~ .pop{
+  display: none;
+}
+#close-pop:checked ~ .close{
+    display: none;
+  }
+  #close-pop{
+    display: none;
+  }
+.close{
+    z-index: 40;
+    position: fixed;
+    top: 60px;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-left: 80%;
+    border-bottom: 5px solid tomato;
+    cursor: pointer;
+}
 /*max-width = hasta , min-widtw= desde*/
 @media screen and  (min-width:768px){
    
